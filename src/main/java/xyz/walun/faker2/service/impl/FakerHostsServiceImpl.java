@@ -7,15 +7,16 @@ import xyz.walun.faker2.service.IFakerHostsService;
 import xyz.walun.faker2.utils.CreateGatewaies;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Walun on 2019-06-03 15:42
  */
-@Service("fakerHostsServiceImpl")
+@Service
 public class FakerHostsServiceImpl implements IFakerHostsService {
     @Autowired
     private CreateGatewaies createGatewaies;
+
+
 
     @Override
     public ArrayList<Gateway> getHosts(int gat_num, int sensor_num) {

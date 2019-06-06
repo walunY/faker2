@@ -30,6 +30,7 @@ public class CreateGatewaies {
 
 			// 获取当前线程，可以在多线程时唯一标记sn
 			Thread thread = Thread.currentThread();
+			System.out.println(thread);
 			String[] split = Thread.currentThread().toString().split(",");
 
 			// 前缀+序列号+线程号+时间戳，高并发时唯一确定sn
