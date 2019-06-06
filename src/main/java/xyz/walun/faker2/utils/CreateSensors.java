@@ -41,8 +41,9 @@ public class CreateSensors {
 			}
 			sensor.setEps(endpoints);
 			// 获取当前线程，可以在多线程时唯一标记sn
-			String[] split = Thread.currentThread().toString().split(",");
-			sensor.setSn("faker-" +tag_host+"-"+ i + "-" + split[1] + "-" + new Date().getTime());
+			String[] split1 = Thread.currentThread().toString().split("-");
+			String s = split1[1].split(",")[0];
+			sensor.setSn("faker-" +tag_host+"-"+ i + "-" + s + "-" + new Date().getTime());
 			// 根据序列号是否在线
 			sensor.setOl(i % 2 == 0 ? true : false);
 			// 设置属性

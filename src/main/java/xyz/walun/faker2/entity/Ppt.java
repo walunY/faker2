@@ -15,4 +15,12 @@ public class Ppt {
 	private  final Integer rssi = 2;
 	// 路由状态
 	private  final Integer router = 0;
+
+	public Integer getRssi() {
+		return rssi;
+	}
+
+	public Integer getRouter() {
+		return router;
+	}
 }

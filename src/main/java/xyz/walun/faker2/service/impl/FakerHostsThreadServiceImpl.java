@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author ：Walun
  * @date ：Created in 2019/6/5 23:01
  */
-@Service("fakerHostsThreadService")
+@Service
 public class FakerHostsThreadServiceImpl implements IFakerHostsThreadService{
 	@Autowired
 	private CreateGatewaies createGatewaies;
@@ -23,28 +23,44 @@ public class FakerHostsThreadServiceImpl implements IFakerHostsThreadService{
 	@Override
 	public ArrayList<Gateway> getHosts1(int gat_num, int sensor_num) {
 		ArrayList<Gateway> sensors = createGatewaies.getSensors(gat_num, sensor_num);
-		System.out.println(sensors);
+		System.out.println("s1"+sensors);// 有值
 		return sensors;
 	}
 
+	@Async
 	@Override
 	public ArrayList<Gateway> getHosts2(int gat_num, int sensor_num) {
-		return createGatewaies.getSensors(gat_num, sensor_num);
+//		return createGatewaies.getSensors(gat_num, sensor_num);
+		ArrayList<Gateway> sensors = createGatewaies.getSensors(gat_num, sensor_num);
+		System.out.println("s1"+sensors);
+		return sensors;
 	}
 
+	@Async
 	@Override
 	public ArrayList<Gateway> getHosts3(int gat_num, int sensor_num) {
-		return createGatewaies.getSensors(gat_num, sensor_num);
+//		return createGatewaies.getSensors(gat_num, sensor_num);
+		ArrayList<Gateway> sensors = createGatewaies.getSensors(gat_num, sensor_num);
+		System.out.println("s1"+sensors);
+		return sensors;
 	}
 
+	@Async
 	@Override
 	public ArrayList<Gateway> getHosts4(int gat_num, int sensor_num) {
-		return createGatewaies.getSensors(gat_num, sensor_num);
+//		return createGatewaies.getSensors(gat_num, sensor_num);
+		ArrayList<Gateway> sensors = createGatewaies.getSensors(gat_num, sensor_num);
+		System.out.println("s1"+sensors);
+		return sensors;
 	}
 
+	@Async
 	@Override
 	public ArrayList<Gateway> getHosts5(int gat_num, int sensor_num) {
-		return createGatewaies.getSensors(gat_num, sensor_num);
+//		return createGatewaies.getSensors(gat_num, sensor_num);
+		ArrayList<Gateway> sensors = createGatewaies.getSensors(gat_num, sensor_num);
+		System.out.println("s1"+sensors);
+		return sensors;
 	}
 
 }

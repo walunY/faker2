@@ -22,4 +22,28 @@ public class Endpoint {
 	private Integer tp;
 	// 探测值
 	private String vu;
+
+	public Integer getAddr() {
+		return addr;
+	}
+
+	public void setAddr(Integer addr) {
+		this.addr = addr;
+	}
+
+	public Integer getTp() {
+		return tp;
+	}
+
+	public void setTp(Integer tp) {
+		this.tp = tp;
+	}
+
+	public String getVu() {
+		return vu;
+	}
+
+	public void setVu(String vu) {
+		this.vu = vu;
+	}
 }

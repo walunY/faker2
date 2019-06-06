@@ -31,10 +31,10 @@ public class CreateGatewaies {
 			// 获取当前线程，可以在多线程时唯一标记sn
 			Thread thread = Thread.currentThread();
 			System.out.println(thread);
-			String[] split = Thread.currentThread().toString().split(",");
-
+			String[] split1 = Thread.currentThread().toString().split("-");
+			String s = split1[1].split(",")[0];
 			// 前缀+序列号+线程号+时间戳，高并发时唯一确定sn
-			gateway.setSn("faker-host-"+i+"-"+split[1]+"-"+new Date().getTime());
+			gateway.setSn("faker-host-"+i+"-"+s+"-"+new Date().getTime());
 			// 时间戳
 			gateway.setTs(new Date().getTime());
 			// 网关类型

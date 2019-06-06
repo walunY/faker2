@@ -30,4 +30,52 @@ public class Sensor {
 	private String na;
 	// 传感器类型
 	private String tp;
+
+	public ArrayList<Endpoint> getEps() {
+		return eps;
+	}
+
+	public void setEps(ArrayList<Endpoint> eps) {
+		this.eps = eps;
+	}
+
+	public String getSn() {
+		return sn;
+	}
+
+	public void setSn(String sn) {
+		this.sn = sn;
+	}
+
+	public boolean isOl() {
+		return ol;
+	}
+
+	public void setOl(boolean ol) {
+		this.ol = ol;
+	}
+
+	public Ppt getPpt() {
+		return ppt;
+	}
+
+	public void setPpt(Ppt ppt) {
+		this.ppt = ppt;
+	}
+
+	public String getNa() {
+		return na;
+	}
+
+	public void setNa(String na) {
+		this.na = na;
+	}
+
+	public String getTp() {
+		return tp;
+	}
+
+	public void setTp(String tp) {
+		this.tp = tp;
+	}
 }

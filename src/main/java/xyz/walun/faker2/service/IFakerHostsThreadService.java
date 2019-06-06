@@ -11,14 +11,20 @@ import java.util.ArrayList;
  */
 public interface IFakerHostsThreadService {
 
+	@Async
 	ArrayList<Gateway> getHosts1(int gat_num, int sensor_num) ;
 //	ArrayList<Gateway> getHosts1(int gat_num, int sensor_num) ;
 
+	@Async
 	ArrayList<Gateway> getHosts2(int gat_num, int sensor_num) ;
 
+	@Async
 	ArrayList<Gateway> getHosts3(int gat_num, int sensor_num) ;
 
+	@Async
 	ArrayList<Gateway> getHosts4(int gat_num, int sensor_num) ;
+
+	@Async
 	ArrayList<Gateway> getHosts5(int gat_num, int sensor_num) ;
 }
 

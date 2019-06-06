@@ -22,4 +22,36 @@ public class Gateway {
 	private Long ts;
 	private String type;
 	private ArrayList<Sensor> data;
+
+	public String getSn() {
+		return sn;
+	}
+
+	public void setSn(String sn) {
+		this.sn = sn;
+	}
+
+	public Long getTs() {
+		return ts;
+	}
+
+	public void setTs(Long ts) {
+		this.ts = ts;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public ArrayList<Sensor> getData() {
+		return data;
+	}
+
+	public void setData(ArrayList<Sensor> data) {
+		this.data = data;
+	}
 }
